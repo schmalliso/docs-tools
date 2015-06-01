@@ -307,7 +307,8 @@
                 {% endblock %}
                 {{- render_nextprev() -}}
 
-                {%- feedback -%}
+
+                {%- block feedback %}
                 <div id="rating-panel">
                   <div id="feedback-question">
                     <p>Was this page helpful?</p>
@@ -321,7 +322,7 @@
                     <p>We're sorry! You can {{ jiralink() }} to help us improve this page.</p>
                   </div>
                 </div>
-                {%- endblock %}
+                {% endblock %}
                 {%- block footer %}
                   <div class="footer">
                     <div class="copyright">
