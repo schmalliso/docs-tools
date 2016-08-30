@@ -44,8 +44,12 @@ def option_tasks(conf):
 
     tasks = []
     for dep_fn, option in o.content_iter():
+        if option.has_field('command'):
+            filename = "{0}-{1}".format(option.program, option.command)
+        else:
+            filename = option.program
         output_fn = os.path.join(conf.system.content.options.fn_prefix,
-                                 ''.join((option.directive, '-', option.program,
+                                 ''.join((option.directive, '-', filename,
                                           '-', option.name + '.rst')))
 
         t = Task(job=write_options,

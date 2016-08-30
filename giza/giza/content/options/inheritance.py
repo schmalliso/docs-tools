@@ -28,6 +28,11 @@ class OptionFile(DataContentBase):
 
         ref = (content.program, content.name)
 
+        # if content.has_field('command'):
+        #     ref = (content.program,  content.command, content.name)
+        # else:
+        #     ref = (content.program, content.name)
+
         if not content.is_resolved():
             content.resolve(self.data)
 
