@@ -1,0 +1,39 @@
+[
+  {
+    "git": "https://github.com/mongodb/docs.git",
+    "branches": "../../data/manual-published-branches.yaml",
+    "build": "make publish",
+    "deploy": "make stage"
+  },
+  {
+    "git": "https://github.com/mongodb/docs-php-library.git",
+    "branches": "../../data/php-library-published-branches.yaml",
+    "build": "make publish",
+    "deploy": "make stage"
+  },
+  {
+    "git": "https://github.com/mongodb/docs-ruby.git",
+    "branches": "../../data/ruby-driver-published-branches.yaml",
+    "build": "make publish",
+    "deploy": "make stage"
+  },
+  {
+    "git": "git@github.com:10gen/docs-mongoid.git",
+    "branches": "../../data/mongoid-published-branches.yaml",
+    "build": "make publish",
+    "deploy": "make stage"
+  },
+  {
+    "git": "git@github.com:mongodb/docs-meta.git",
+    "branches": ["master"],
+    "build": "make publish",
+    "deploy": "make stage"
+  },
+  {
+    "name": "guides",
+    "git": "git@github.com:10gen/docs-tutorials.git",
+    "branches": ["master"],
+    "build": "make publish",
+    "deploy": "make stage"
+  }
+]

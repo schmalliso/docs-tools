@@ -123,4 +123,4 @@ if __name__ == "__main__":
     else:
         projects = None
 
-    main("projects.json", projects)
+    main("projects-test.json", projects)
