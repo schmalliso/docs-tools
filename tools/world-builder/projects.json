@@ -88,12 +88,6 @@
     "deploy": "make deploy-opsmgr"
   },
   {
-    "git": "https://github.com/mongodb/docs-spark-connector.git",
-    "branches": "../../data/spark-connector-published-branches.yaml",
-    "build": "make publish",
-    "deploy": "make deploy"
-  },
-  {
     "git": "git@github.com:mongodb/docs-php-library.git",
     "branches": "../../data/php-library-published-branches.yaml",
     "build": "true",
@@ -106,14 +100,8 @@
     "deploy": "make deploy"
   },
   {
-    "git": "git@github.com:mongodb/docs.git",
-    "branches": "../../data/manual-published-branches",
-    "build": "make publish",
-    "deploy": "make deploy"
-  },
-  {
-    "git": "git@github.com:mongodb/docs-mongodb-shell.git",
-    "branches": ["master"],
+    "git": "https://github.com/mongodb/docs-spark-connector.git",
+    "branches": "../../data/spark-connector-published-branches.yaml",
     "build": "make publish",
     "deploy": "make deploy"
   }
